@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function generateAlfabetArray(value) {
+            // Input an integer value (how many letters you want).
+            // Output: you will get an array of letters array.(Uppercase).
+
+            var alfabetArray = [];
+            for (i = 1; i < value + 1; i++) {
+                //console.log((i + 9).toString(36).toUpperCase());
+                alfabetArray.push((i + 9).toString(36).toUpperCase());
+            }
+            return alfabetArray;
+        }
+
+        console.log(generateAlfabetArray(26));
+    </script>
+</body>
+
+</html>
